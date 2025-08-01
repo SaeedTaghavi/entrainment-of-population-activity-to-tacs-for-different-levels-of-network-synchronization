@@ -2,13 +2,14 @@
 
 This repository contains Jupyter notebooks used for simulating, analyzing, and visualizing how a spiking neural network entrains to transcranial alternating current stimulation (tACS) under different levels of internal network synchronization. The simulations were performed using the NEST Simulator (v3.8) inside a Docker container.
 
-## 🧠 Project Overview
+## Project Overview
 
 We explored how varying intrinsic synchrony in a recurrent excitatory-inhibitory network affects its susceptibility to rhythmic entrainment by weak external inputs mimicking tACS. The simulations were conducted using a biologically inspired AdEx spiking neuron model, and the analysis focused on population and single-neuron phase locking, Arnold tongues, frequency tracking, and synchrony metrics.
 
 All results and figures in the related manuscript were generated using the notebooks in this repository.
 
-## 🗂 Repository Structure
+## Repository Structure
+```
 .
 ├── notebooks/ # Jupyter notebooks for simulation and analysis
 │ ├── 01_generate_data.ipynb
@@ -20,9 +21,9 @@ All results and figures in the related manuscript were generated using the noteb
 ├── README.md # This file
 ├── requirements.txt # Python dependencies (used outside Docker)
 └── LICENSE # Open-source license (MIT)
+```
 
-
-## 🚀 Getting Started
+## Getting Started
 
 ### 🐳 Recommended: Run via Docker
 
