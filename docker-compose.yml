@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  nest-server:
+    image: nest/nest-simulator:3.8
+    mem_limit: 20G
+    mem_reservation: 1G
+    environment:
+      LOCAL_USER_ID: "`id -u $USER`"
+      NEST_CONTAINER_MODE: "nest-server"
+
+    ports:
+      - "52425:52425"
+
+  nest-notebook:
+    image: nest/nest-simulator:3.8
+    mem_limit: 20G
+    mem_reservation: 1G
+    volumes:
+      - D:\simulation-data\data:/opt/data
+    environment:
+      PASSWORD: "pass"
+      JUPYTER_TOKEN: "123"
+      LOCAL_USER_ID: "`id -u $USER`"
+      NEST_CONTAINER_MODE: "notebook"
+    working_dir: /opt
+    ports:
+      - "8080:8080"
