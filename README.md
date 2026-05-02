@@ -48,7 +48,7 @@ ei_ac_tacs/
 │   └── 08_significance.ipynb        ← Wilcoxon tests
 │
 ├── data/
-│   └── metadata_ei-ac.csv           ← summary of all simulations
+│   └── metadata_ei-ac.csv           ← summary of all simulations + simulation results
 │
 ├── figures/                         ← generated .eps figures
 │
