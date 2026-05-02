@@ -1,0 +1,7 @@
+numpy
+scipy
+pandas
+matplotlib
+seaborn
+# NEST must be installed separately: https://www.nest-simulator.org/installation/
+# use nest >=3 or dockerimage: nest/nest-simulator:3.8
